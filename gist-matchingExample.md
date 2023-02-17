@@ -10,21 +10,16 @@ Matching an Email – `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 Lets go ahead and decompose this
 
-theGistPost\img\RegexExplanation.png
-
 ## Table of Contents
 
 - [Anchors](#anchors)
-- [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Quantifiers](#quantifiers)
+- [Character Classes](#character-classes)
+- [OR Operator](#or-operator)
+- [Flags](#flags)
+- [Summary](#summary)
+- [Author](#author)
 
 ## Regex Components
 
@@ -113,7 +108,12 @@ In our matching example, we don't use any flags
 
 ---
 ---
+## Summary
+
 For summary, I've covered everything that we need to explain in our our email matching. I've created the following graph to help to breakout what each of the section do in our example 
 
+![image](./img/RegexExplanation.png)
+
 ## Author
+
 Alberto De Armas is an Implementation Consultant working in the tech-fraud detection industry who is currently taking a full-stack web-developer course because it's an area of interest to hopefully become a Product Owner in the short term
