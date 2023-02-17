@@ -63,10 +63,9 @@ They include the following
     * `{n}` --> Matches exactly the number (n) of ocurrences of the preceding item.
        * Example: `/d{4}/` matches a four-digit number like `"2023"`,`"1989"`,`"1234"`
     * `{n,}` --> Matches the pattern at least n number of times
-        * Example: 
+        * Example: `/a{2,}` matches at least 2 occurences of `a`. That means that it would match `mountaain`, `mountaaaaaain`, but it won't match `mountain` because it only has one ocurrence of `a`
     * `{n,m}` --> Matches a character or character class from `n` to `m` times
-        * Example: If you want to find characters class 
-        * Example
+        * Example: Similar to the above, but now you have a constraint on the right hand side. So, in our example above `/a{1,3}` would match `mountaain`, `mountaaaaaain`, `mountain`. However, a diference is that it's matching `mountaaaaaain` because it has three `aaa` consecutively. 
 
 In our “Matching a email” regex example, we use the `+` quantifier to match as many times as possible the `[a-z0-9_\.-]` group.
 
@@ -76,7 +75,7 @@ Continuing with the linear process of our matching email, we have an `@` which a
 * i.e. alberto`@`gmail.com. After the `@` we find the beginning of a new bracket expression followed by a character class of `\d`. Let's explain Character Classes
 
 ### Character Classes
-A character class in a regex defines a set of characters, any one of which can occur in an input string to fulfill a match. We've actually already discussed some character classes. The bracket expressions outlined previously, including positive and negative character groups, are considered character classes.
+A character class in a regex defines a set of characters that can happen in a string to fulfill a match.
 
 Here are some of the other common character classes:
 * `.` Matches any character except the newline character (\n)
@@ -116,8 +115,5 @@ In our matching example, we don't use any flags
 ---
 For summary, I've covered everything that we need to explain in our our email matching. I've created the following graph to help to breakout what each of the section do in our example 
 
-
-
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Alberto De Armas is an Implementation Consultant working in the tech-fraud detection industry who is currently taking a full-stack web-developer course because it's an area of interest to hopefully become a Product Owner in the short term
